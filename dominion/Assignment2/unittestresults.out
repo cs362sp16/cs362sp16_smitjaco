@@ -1,0 +1,594 @@
+Starting game.
+PASSED
+PASSED
+PASSED
+PASSED
+Starting game.
+PASSED
+PASSED
+PASSED
+PASSED
+PASSED
+FAILED
+PASSED
+Starting game.
+PASSED
+PASSED
+PASSED
+PASSED
+Starting game.
+PASSED
+PASSED
+PASSED
+PASSED
+Starting game.
+PASSED
+PASSED
+FAILED
+PASSED
+PASSED
+Starting game.
+PASSED
+PASSED
+FAILED
+FAILED
+PASSED
+Starting game.
+PASSED
+FAILED
+PASSED
+PASSED
+PASSED
+FAILED
+PASSED
+Starting game.
+PASSED
+PASSED
+FAILED
+FAILED
+File 'unittest1.c'
+Lines executed:81.82% of 22
+Creating 'unittest1.c.gcov'
+
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        1:   16:  srand(time(NULL));
+        1:   17:  int rando = ( rand()%10 );
+        1:   18:  int r = initializeGame(2, k, rando, &G);
+        -:   19:  
+        1:   20:  if (r == 0) {
+        1:   21:	printf("PASSED\n");  
+        -:   22:  } else {
+    #####:   23:	printf("FAILED\n");
+        -:   24:  }
+        -:   25:  
+        -:   26:  // TESTING - buyCard
+        -:   27:
+        1:   28:  int prevNumBuys = G.numBuys;
+        1:   29:  int prevCoins = G.coins;
+        -:   30:
+        1:   31:  int bC = buyCard(copper, &G);
+        -:   32:
+        1:   33:  if (bC == 0) {
+        1:   34:	printf("PASSED\n");  
+        -:   35:  } else {
+    #####:   36:	printf("FAILED\n");
+        -:   37:  }
+        1:   38:  if (G.numBuys == (prevNumBuys - 1)) {
+        1:   39:	printf("PASSED\n");  
+        -:   40:  } else {
+    #####:   41:	printf("FAILED\n");
+        -:   42:  }
+        1:   43:  if (G.coins == (prevCoins - (getCost(copper)))) {
+        1:   44:	printf("PASSED\n");  
+        -:   45:  } else {
+    #####:   46:	printf("FAILED\n");
+        -:   47:  }
+        1:   48:  return 0;
+        -:   49:}
+File 'unittest2.c'
+Lines executed:79.41% of 34
+Creating 'unittest2.c.gcov'
+
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        1:   16:  srand(time(NULL));
+        1:   17:  int rando = ( rand()%10 );
+        1:   18:  int r = initializeGame(2, k, rando, &G);
+        1:   19:  if (r == 0) {
+        1:   20:	printf("PASSED\n");  
+        -:   21:  } else {
+    #####:   22:	printf("FAILED\n");
+        -:   23:  }
+        -:   24:
+        -:   25:  // TESTING - getCost
+        -:   26:
+        -:   27: 
+        1:   28:  int estateValue = getCost(estate);
+        1:   29:  if (estateValue == 2) {
+        1:   30:	printf("PASSED\n");  
+        -:   31:  } else {
+    #####:   32:	printf("FAILED\n");
+        -:   33:  }
+        -:   34:
+        1:   35:  int duchyValue = getCost(duchy);
+        1:   36:  if (duchyValue == 5) {
+        1:   37:	printf("PASSED\n");  
+        -:   38:  } else {
+    #####:   39:	printf("FAILED\n");
+        -:   40:  }
+        -:   41:
+        1:   42:   int curseValue = getCost(curse);
+        1:   43:  if (curseValue == 0) {
+        1:   44:	printf("PASSED\n");  
+        -:   45:  } else {
+    #####:   46:	printf("FAILED\n");
+        -:   47:  }
+        -:   48:  
+        -:   49:  
+        1:   50:  int provinceValue = getCost(province);
+        1:   51:  if (provinceValue == 8) {
+        1:   52:	printf("PASSED\n");  
+        -:   53:  } else {
+    #####:   54:	printf("FAILED\n");
+        -:   55:  }
+        -:   56:
+        1:   57:  int remodelValue = getCost(remodel);
+        1:   58:  if (remodelValue == 8) {
+    #####:   59:	printf("PASSED\n");  
+        -:   60:  } else {
+        1:   61:	printf("FAILED\n");
+        -:   62:  }
+        -:   63:
+        1:   64:  int smithyValue = getCost(smithy);
+        1:   65:  if (smithyValue == 4) {
+        1:   66:	printf("PASSED\n");  
+        -:   67:  } else {
+    #####:   68:	printf("FAILED\n");
+        -:   69:  }
+        -:   70:
+        1:   71:  return 0;
+        -:   72:}
+File 'unittest3.c'
+Lines executed:86.67% of 30
+Creating 'unittest3.c.gcov'
+
+        -:    0:Source:unittest3.c
+        -:    0:Graph:unittest3.gcno
+        -:    0:Data:unittest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        1:   16:  srand(time(NULL));
+        1:   17:  int rando = ( rand()%10 );
+        1:   18:  int r = initializeGame(2, k, rando, &G);
+        1:   19:  if (r == 0) {
+        1:   20:	printf("PASSED\n");  
+        -:   21:  } else {
+    #####:   22:	printf("FAILED\n");
+        -:   23:  }
+        -:   24:
+        -:   25:  // TESTING - isGameOver
+        -:   26:
+        1:   27:  int iGO = isGameOver(&G);
+        1:   28:  if (iGO == 0) {
+        1:   29:	printf("PASSED\n");  
+        -:   30:  } else {
+    #####:   31:	printf("FAILED\n");
+        -:   32:  }
+        -:   33:
+        -:   34:  // The game ends when Providence cards are all gone
+        1:   35:  G.supplyCount[province] == 0;
+        1:   36:  iGO = isGameOver(&G);
+        1:   37:  if (iGO == 0) {
+        1:   38:	printf("PASSED\n");  
+        -:   39:  } else {
+    #####:   40:	printf("FAILED\n");
+        -:   41:  }
+        -:   42:
+        -:   43:  // Or the game ends when any 3 stacks are empty
+        1:   44:  srand(time(NULL));
+        1:   45:  int rand1 = ( rand()%25 );
+        1:   46:  int rand2 = ( rand()%25 );
+        1:   47:  int rand3 = ( rand()%25 );
+        -:   48:
+        1:   49:  G.supplyCount[rand1] == 0;
+        1:   50:  G.supplyCount[rand2] == 0;
+        1:   51:  G.supplyCount[rand3] == 0;
+        -:   52:
+        1:   53:  iGO = isGameOver(&G);
+        1:   54:  if (iGO == 0) {
+        1:   55:	printf("PASSED\n");  
+        -:   56:  } else {
+    #####:   57:	printf("FAILED\n");
+        -:   58:  }
+        -:   59:
+        1:   60:  return 0;
+        -:   61:}
+File 'unittest4.c'
+Lines executed:81.82% of 22
+Creating 'unittest4.c.gcov'
+
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        1:   16:  srand(time(NULL));
+        1:   17:  int rando = ( rand()%10 );
+        1:   18:  int r = initializeGame(2, k, rando, &G);
+        1:   19:  if (r == 0) {
+        1:   20:	printf("PASSED\n");  
+        -:   21:  } else {
+    #####:   22:	printf("FAILED\n");
+        -:   23:  }
+        -:   24:
+        -:   25:  // TESTING - whoseTurn
+        -:   26:
+        1:   27:  int wT = whoseTurn(&G);
+        1:   28:  if (wT == 0) {
+        1:   29:	printf("PASSED\n");  
+        -:   30:  } else {
+    #####:   31:	printf("FAILED\n");
+        -:   32:  }
+        -:   33:
+        -:   34:
+        1:   35:  int endingTurn = endTurn(&G);
+        1:   36:  if (endingTurn == 0) {
+        1:   37:	printf("PASSED\n");  
+        -:   38:  } else {
+    #####:   39:	printf("FAILED\n");
+        -:   40:  }
+        1:   41:  wT = whoseTurn(&G);
+        1:   42:  if (wT == 1) {
+        1:   43:	printf("PASSED\n");  
+        -:   44:  } else {
+    #####:   45:	printf("FAILED\n");
+        -:   46:  }
+        -:   47:
+        1:   48:  return 0;
+        -:   49:}
+File 'cardtest1.c'
+Lines executed:80.77% of 26
+Creating 'cardtest1.c.gcov'
+
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        -:   16:  // 2 player game
+        1:   17:  srand(time(NULL));
+        1:   18:  int rando = ( rand()%10 );
+        1:   19:  int r = initializeGame(2, k, rando, &G);
+        1:   20:  if (r == 0) {
+        1:   21:	printf("PASSED\n");  
+        -:   22:  } else {
+    #####:   23:	printf("FAILED\n");
+        -:   24:  }
+        -:   25:
+        -:   26:  // TESTING -- int council_roomEffect(int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:   27:  // Council Room will add +4 cards, +1 buy, and each other player draws a card
+        1:   28:  int p1handCount = G.handCount[0];
+        1:   29:  int p2handCount = G.handCount[1];
+        1:   30:  int numBuys = G.numBuys;
+        -:   31:
+        1:   32:  int cRE = council_roomEffect(0, 0, 0, &G, 0);
+        -:   33:  
+        1:   34:  if (G.handCount[1] == (p2handCount+1)) {
+        1:   35:	printf("PASSED\n");  
+        -:   36:  } else {
+    #####:   37:	printf("FAILED\n");
+        -:   38:  }
+        1:   39:  if (G.handCount[0] == (p1handCount+4)) {
+    #####:   40:	printf("PASSED\n");  
+        -:   41:  } else {
+        1:   42:	printf("FAILED\n");
+        -:   43:  }
+        1:   44:  if (G.numBuys == (numBuys+1)) {
+        1:   45:	printf("PASSED\n");  
+        -:   46:  } else {
+    #####:   47:	printf("FAILED\n");
+        -:   48:  }
+        1:   49:  if (cRE == 0) {
+        1:   50:	printf("PASSED\n");  
+        -:   51:  } else {
+    #####:   52:	printf("FAILED\n");
+        -:   53:  }
+        -:   54:
+        1:   55:  return 0;
+        -:   56:}
+File 'cardtest2.c'
+Lines executed:79.17% of 24
+Creating 'cardtest2.c.gcov'
+
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        -:   16:  // 2 player game
+        1:   17:  srand(time(NULL));
+        1:   18:  int rando = ( rand()%10 );
+        1:   19:  int r = initializeGame(2, k, rando, &G);
+        1:   20:  if (r == 0) {
+        1:   21:	printf("PASSED\n");  
+        -:   22:  } else {
+    #####:   23:	printf("FAILED\n");
+        -:   24:  }
+        -:   25:
+        -:   26:  // TESTING -- int remodelEffect(int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:   27:  // Remodel trashes a card in current_player's hand (choice1)
+        -:   28:  // ... then, the player gains a card of value UP TO 2 more than trashed card (choice2)
+        1:   29:  int p1handCount = G.handCount[0];
+        -:   30:
+        -:   31:  
+        1:   32:  if (G.playedCardCount == 0) {
+        1:   33:	printf("PASSED\n");  
+        -:   34:  } else {
+    #####:   35:	printf("FAILED\n");
+        -:   36:  }
+        -:   37:  
+        1:   38:  int rE = remodelEffect(estate, smithy, 0, &G, 0);
+        -:   39:
+        1:   40:  if (G.handCount[0] == (p1handCount-1)) {
+    #####:   41:	printf("PASSED\n");  
+        -:   42:  } else {
+        1:   43:	printf("FAILED\n");
+        -:   44:  }
+        1:   45:  if (G.playedCardCount == 1) {
+    #####:   46:	printf("PASSED\n");  
+        -:   47:  } else {
+        1:   48:	printf("FAILED\n");
+        -:   49:  }
+        1:   50:  if (rE == 0) {
+        1:   51:	printf("PASSED\n");  
+        -:   52:  } else {
+    #####:   53:	printf("FAILED\n");
+        -:   54:  }
+        -:   55:
+        1:   56:  return 0;
+        -:   57:}
+File 'cardtest3.c'
+Lines executed:80.56% of 36
+Creating 'cardtest3.c.gcov'
+
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        -:   16:  // 2 player game
+        1:   17:  srand(time(NULL));
+        1:   18:  int rando = ( rand()%10 );
+        1:   19:  int r = initializeGame(2, k, rando, &G);
+        1:   20:  if (r == 0) {
+        1:   21:	printf("PASSED\n");  
+        -:   22:  } else {
+    #####:   23:	printf("FAILED\n");
+        -:   24:  }
+        -:   25:
+        -:   26:  // TESTING -- int cardEffect(STEWARD, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:   27:  // STEWARD -- choice1 = 1:     +2 cards
+        -:   28:  //         -- choice1 = 2:     +2 coins
+        -:   29:  //         -- choice1 = 3:     trash 2 cards from hand  (given by choice2 and choice3)
+        1:   30:  int p1handCount = G.handCount[0];
+        1:   31:  int cE = cardEffect(steward, 1, 0, 0, &G, 0);
+        -:   32:
+        1:   33:  if (G.handCount[0] != (p1handCount + 2)) {
+        1:   34:	printf("FAILED\n");
+        -:   35:  } else {
+    #####:   36:	printf("PASSED\n");
+        -:   37:  }
+        1:   38:  if (cE == 0) {
+        1:   39:	printf("PASSED\n");  
+        -:   40:  } else {
+    #####:   41:	printf("FAILED\n");
+        -:   42:  }
+        -:   43:
+        1:   44:  int numCoins = G.coins;
+        1:   45:  cE = cardEffect(steward, 2, 0, 0, &G, 0);
+        -:   46:
+        1:   47:  if (G.coins != (numCoins + 2)) {
+    #####:   48:	printf("FAILED\n");
+        -:   49:  } else {
+        1:   50:	printf("PASSED\n");
+        -:   51:  }
+        1:   52:  if (cE == 0) {
+        1:   53:	printf("PASSED\n");  
+        -:   54:  } else {
+    #####:   55:	printf("FAILED\n");
+        -:   56:  }
+        -:   57:
+        1:   58:  gainCard(copper, &G, 2, 1);   // gain copper to player1's hand
+        1:   59:  gainCard(copper, &G, 2, 1);   // do it twice, so we can discard 2 coppers
+        1:   60:  p1handCount = G.handCount[0];
+        1:   61:  cE = cardEffect(steward, 3, copper, copper, &G, 0);
+        -:   62:
+        1:   63: if (G.handCount[0] != (p1handCount - 2)) {
+        1:   64:	printf("FAILED\n");
+        -:   65:  } else {
+    #####:   66:	printf("PASSED\n");
+        -:   67:  }
+        1:   68:  if (cE == 0) {
+        1:   69:	printf("PASSED\n");  
+        -:   70:  } else {
+    #####:   71:	printf("FAILED\n");
+        -:   72:  }
+        -:   73:
+        1:   74:  return 0;
+        -:   75:}
+File 'cardtest4.c'
+Lines executed:83.33% of 24
+Creating 'cardtest4.c.gcov'
+
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "assert.h"
+        -:    2:#include "dominion.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include "rngs.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        1:    8:int main (int argc, char** argv) {
+        -:    9:  struct gameState G;
+        -:   10:
+        1:   11:  int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse,
+        -:   12:	       sea_hag, tribute, smithy};
+        -:   13:
+        1:   14:  printf ("Starting game.\n");
+        -:   15:
+        -:   16:  // 2 player game
+        1:   17:  srand(time(NULL));
+        1:   18:  int rando = ( rand()%10 );
+        1:   19:  int r = initializeGame(2, k, rando, &G);
+        1:   20:  if (r == 0) {
+        1:   21:	printf("PASSED\n");  
+        -:   22:  } else {
+    #####:   23:	printf("FAILED\n");
+        -:   24:  }
+        -:   25:
+        -:   26:  // TESTING -- int cardEffect(GARDENS, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:   27:  // GARDENS -- worth 1 victory point for every 10 cards in deck
+        -:   28:
+        1:   29:  gainCard(gardens, &G, 1, 1);                       // gain copper to player1's DECK
+        1:   30:  int deckCount = fullDeckCount(1, 0, &G);           // deckCount should be 11 after gaining GARDENS (7 copper, 3 estates, 1 gardens)
+        1:   31:  int cE = cardEffect(gardens, 0, 0, 0, &G, 0);
+        1:   32:  if (cE == -1) {
+        1:   33:	printf("PASSED\n");  
+        -:   34:  } else {
+    #####:   35:	printf("FAILED\n");
+        -:   36:  }
+        -:   37:  
+        1:   38:  int getp1Score = scoreFor(1, &G);
+        1:   39:  getp1Score = getp1Score - 3;                      // we don't care about the 3 victory points from estates, only gardens
+        1:   40:  if (getp1Score != (deckCount / 10)) {
+        1:   41:	printf("FAILED\n");
+        -:   42:  } else {
+    #####:   43:	printf("PASSED\n");
+        -:   44:  }
+        -:   45:
+        -:   46:  // we know the deck count is 11, and estates are no longer counted for score
+        -:   47:  // p1Score should get 1, given we have 1 garden and 11 cards
+        1:   48:  if (getp1Score != 1) {
+        1:   49:	  printf("FAILED\n");
+        -:   50:  } else {
+    #####:   51:	printf("PASSED\n");
+        -:   52:  }
+        -:   53:
+        1:   54:  return 0;
+        -:   55:}
