@@ -643,7 +643,7 @@ int getCost(int cardNumber)
   return -1;
 }
 
-// HERE ARE THE 5 cardEffect functions
+// here are the 5 cardEffect functions
 int adventurerEffect(int choice1, int choice2, int choice3, struct gameState *state, int handPos)
 {
   int currentPlayer = whoseTurn(state);
