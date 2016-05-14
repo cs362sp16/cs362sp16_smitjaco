@@ -1,0 +1,74 @@
+TESTING council room card
+RANDOM TESTS
+308 of 308 TESTS PASSED
+File 'randomcounciltest.c'
+Lines executed:86.67% of 30
+Creating 'randomcounciltest.c.gcov'
+
+File '<built-in>'
+No executable lines
+Removing '<built-in>.gcov'
+
+        -:    0:Source:randomcounciltest.c
+        -:    0:Graph:randomcounciltest.gcno
+        -:    0:Data:randomcounciltest.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:#include <stdio.h>
+        -:    6:#include <time.h>
+        -:    7:#include "rngs.h"
+        -:    8:
+        -:    9:// Tests the council room card in dominion.c
+        1:   10:int main (int argc, char** argv) {
+        1:   11:    printf("TESTING council room card\n");
+        -:   12:
+        1:   13:    srand(time(NULL));
+        -:   14:
+        1:   15:    printf("RANDOM TESTS\n");
+        -:   16:
+        1:   17:    int numtests = 100;
+        1:   18:    int NUMQUESTIONS = 0;
+        1:   19:    int bad = 0;
+      101:   20:    for(int i = 0; i < numtests; i++){
+      100:   21:        int numplayers = rand() % (MAX_PLAYERS - 1) + 2; // Value between 2 and 4.
+      100:   22:        NUMQUESTIONS += numplayers;
+        -:   23:        struct gameState G;
+      100:   24:        int k[10] = {adventurer, gardens, embargo, village, steward, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   25:
+      100:   26:        initializeGame(numplayers, k, rand(), &G);
+        -:   27:
+      100:   28:        int player = rand() % numplayers;
+      100:   29:        G.whoseTurn = player;
+        -:   30:        
+      100:   31:        int bonus = rand() % 50;
+      100:   32:        int choice1 = rand() % 50;
+      100:   33:        int choice2 = rand() % 50;
+      100:   34:        int choice3 = rand() % 50;
+      100:   35:        int handPos = rand() % MAX_HAND;
+        -:   36:
+        -:   37:        struct gameState orig;
+      100:   38:        memcpy(&orig, &G, sizeof(struct gameState));
+        -:   39:
+      100:   40:        cardEffect(council_room, choice1, choice2, choice3, &G, handPos, &bonus);
+        -:   41:
+      408:   42:        for(int i = 0; i < numplayers; i++){
+      308:   43:            if(i == player){
+      100:   44:                if(G.handCount[i] != orig.handCount[i] + 3){
+    #####:   45:                    printf("TEST FAILED: Player %d didn't get 3 more cards.\n", i);
+    #####:   46:                    bad++;
+        -:   47:                }
+        -:   48:            }else{
+      208:   49:                if(G.handCount[i] != orig.handCount[i] + 1){
+    #####:   50:                    printf("TEST FAILED: Player %d didn't draw 1 card.\n", i);
+    #####:   51:                    bad++;
+        -:   52:                }
+        -:   53:            }
+        -:   54:        }
+        -:   55:    }
+        -:   56:
+        1:   57:    printf("%d of %d TESTS PASSED\n", NUMQUESTIONS - bad, NUMQUESTIONS);
+        -:   58:}

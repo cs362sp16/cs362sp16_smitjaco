@@ -1,0 +1,28 @@
+randomtest.txt
+
+I chose to test for a passing return value for each of the random test generators for 2 card effects as well as correct pre/post hand
+count values. Also, 1/3 the time, the deck with run into an empty case where discard must be shuffled in.
+Another 1/3 the time, I loaded the deck with cards that should always be reached/pass the card effects to
+ensure the adventurer or smithy cards were functioning properly.
+
+I ran into an implicit declaration of "int cardEffect(...)" a few times, so I went back and made sure to include
+'dominion.h' as well as 'dominion_helpers.h' to 'dominion.c', 'randomtestcard.c', and 'randomtestadventurer.c'
+to solve this.
+
+I had to set the int variable player=0 (or the first player in the game) as it was previously not initialized.
+
+In cardEffect in 'dominion.c', I had many buggy issues with calling adventurer, at first. I found in the switch
+statement for the case 'adventurer', I did not return the actual return value of this function. I also had to fix the issue with the missing/mix-matched parameters in
+both the prototype to cardEffect (the prototype included the uynused ints handPos and *coin_bonus) as well as every
+call to cardEffect in every other location; primarily the calls in the random tester functions.
+
+I kept receiving the same perplexing ERROR 134 when I was trying to compile using my new makefile rule.
+After some research, I figured out the make was aborted everytime on error 134 because an assert statement was
+failing in both of the testers. I removed the asserts I had previously added and replaced them with more
+informative print statements of what the variables in question contain, instead of a crashing assert statement.
+I was able to receive high test coverage after debugging the tester and improving the quality of WHAT I was testing.
+
+
+
+The Makefile rules can be invoked with the calls "make runAdventurer" and "make runRandomCard" and "make runRandomCard1".
+They output results (and gcoc info) to 'randomtestadventurer.out' , 'randomtestcard.out' , and randomcounciltest.out respectively.
