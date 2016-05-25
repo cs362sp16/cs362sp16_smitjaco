@@ -1,4 +1,4 @@
-My tester had fairly good coverage. Within 2 runs I was able to achieve at least 60% code coverage. 
+My tester had fairly good coverage. Within 6 runs I was able to achieve at least 60% code coverage. 
 Even though high code coverage does not mean the that the test
 is good or better than another test, however it has a greater chance of revealing bugs in the code. 
 After analysing what parts of the code were not touched, 
