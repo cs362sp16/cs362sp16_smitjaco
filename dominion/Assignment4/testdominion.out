@@ -1,0 +1,6190 @@
+
+
+---
+Start of testdominion.c -- Testing full implementation of Dominion
+---
+
+
+RUNNING TEST 1
+
+This game will have 4 players!
+
+Printing INITIAL gamestate information: 
+numPlayers: 4
+
+ALL Kingdom Cards -- KEY : 
+curse - 0
+estate - 1
+duchy - 2
+province - 3
+copper - 4
+silver - 5
+gold - 6
+adventurer - 7
+council_room - 8
+feast - 9
+gardens - 10
+mine - 11
+remodel - 12
+smithy - 13
+village - 14
+baron - 15
+great_hall - 16
+minion - 17
+steward - 18
+tribute - 19
+ambassador - 20
+cutpurse - 21
+embargo - 22
+outpost - 23
+salvager - 24
+sea_hag - 25
+treasure_map - 26
+
+Randomly Selected Kingdom Cards (by ENUM): 
+k[0]: 25
+k[1]: 1
+k[2]: 10
+k[3]: 22
+k[4]: 12
+k[5]: 21
+k[6]: 20
+k[7]: 19
+k[8]: 13
+k[9]: 9
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 22 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 22 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 1 money before buy: 
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 22 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 3
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 22 4 4 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 20 for 3 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 5 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 5 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 6 money before buy: 
+Player 0: bought 25 for 4 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 12
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 5 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 5 money before buy: 
+Player 1: bought 25 for 4 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 20 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 13
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 5 5 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 5 money before buy: 
+Player 2: bought 25 for 4 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 5 20 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 5 4 1 20 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 20.
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+
+--
+--- The Game is over! ---
+
+Score for Player 0: 11
+Score for Player 1: 3
+Score for Player 2: 6
+Score for Player 3: 6
+
+RUNNING TEST 2
+
+This game will have 4 players!
+
+Printing INITIAL gamestate information: 
+numPlayers: 4
+
+ALL Kingdom Cards -- KEY : 
+curse - 0
+estate - 1
+duchy - 2
+province - 3
+copper - 4
+silver - 5
+gold - 6
+adventurer - 7
+council_room - 8
+feast - 9
+gardens - 10
+mine - 11
+remodel - 12
+smithy - 13
+village - 14
+baron - 15
+great_hall - 16
+minion - 17
+steward - 18
+tribute - 19
+ambassador - 20
+cutpurse - 21
+embargo - 22
+outpost - 23
+salvager - 24
+sea_hag - 25
+treasure_map - 26
+
+Randomly Selected Kingdom Cards (by ENUM): 
+k[0]: 25
+k[1]: 1
+k[2]: 10
+k[3]: 22
+k[4]: 12
+k[5]: 21
+k[6]: 20
+k[7]: 19
+k[8]: 13
+k[9]: 9
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 22 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 22 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 1 money before buy: 
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 22 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 3
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 22 4 4 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 20 for 3 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 5 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 5 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 6 money before buy: 
+Player 0: bought 25 for 4 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 12
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 5 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 5 money before buy: 
+Player 1: bought 25 for 4 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 20 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 13
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 5 5 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 5 money before buy: 
+Player 2: bought 25 for 4 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 5 20 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 5 4 1 20 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 20.
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+
+--
+--- The Game is over! ---
+
+Score for Player 0: 11
+Score for Player 1: 3
+Score for Player 2: 6
+Score for Player 3: 6
+
+RUNNING TEST 3
+
+This game will have 4 players!
+
+Printing INITIAL gamestate information: 
+numPlayers: 4
+
+ALL Kingdom Cards -- KEY : 
+curse - 0
+estate - 1
+duchy - 2
+province - 3
+copper - 4
+silver - 5
+gold - 6
+adventurer - 7
+council_room - 8
+feast - 9
+gardens - 10
+mine - 11
+remodel - 12
+smithy - 13
+village - 14
+baron - 15
+great_hall - 16
+minion - 17
+steward - 18
+tribute - 19
+ambassador - 20
+cutpurse - 21
+embargo - 22
+outpost - 23
+salvager - 24
+sea_hag - 25
+treasure_map - 26
+
+Randomly Selected Kingdom Cards (by ENUM): 
+k[0]: 25
+k[1]: 1
+k[2]: 10
+k[3]: 22
+k[4]: 12
+k[5]: 21
+k[6]: 20
+k[7]: 19
+k[8]: 13
+k[9]: 9
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 22 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 22 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 1 money before buy: 
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 22 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 3
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 22 4 4 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 20 for 3 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 5 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 5 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 6 money before buy: 
+Player 0: bought 25 for 4 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 12
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 5 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 5 money before buy: 
+Player 1: bought 25 for 4 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 20 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 13
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 5 5 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 5 money before buy: 
+Player 2: bought 25 for 4 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 5 20 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 5 4 1 20 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 20.
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+
+--
+--- The Game is over! ---
+
+Score for Player 0: 11
+Score for Player 1: 3
+Score for Player 2: 6
+Score for Player 3: 6
+
+RUNNING TEST 4
+
+This game will have 4 players!
+
+Printing INITIAL gamestate information: 
+numPlayers: 4
+
+ALL Kingdom Cards -- KEY : 
+curse - 0
+estate - 1
+duchy - 2
+province - 3
+copper - 4
+silver - 5
+gold - 6
+adventurer - 7
+council_room - 8
+feast - 9
+gardens - 10
+mine - 11
+remodel - 12
+smithy - 13
+village - 14
+baron - 15
+great_hall - 16
+minion - 17
+steward - 18
+tribute - 19
+ambassador - 20
+cutpurse - 21
+embargo - 22
+outpost - 23
+salvager - 24
+sea_hag - 25
+treasure_map - 26
+
+Randomly Selected Kingdom Cards (by ENUM): 
+k[0]: 25
+k[1]: 1
+k[2]: 10
+k[3]: 22
+k[4]: 12
+k[5]: 21
+k[6]: 20
+k[7]: 19
+k[8]: 13
+k[9]: 9
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 22 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 22 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 1 money before buy: 
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 22 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 3
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 22 4 4 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 20 for 3 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 5 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 5 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 6 money before buy: 
+Player 0: bought 25 for 4 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 12
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 5 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 5 money before buy: 
+Player 1: bought 25 for 4 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 20 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 13
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 5 5 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 5 money before buy: 
+Player 2: bought 25 for 4 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 5 20 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 5 4 1 20 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 20.
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+
+--
+--- The Game is over! ---
+
+Score for Player 0: 11
+Score for Player 1: 3
+Score for Player 2: 6
+Score for Player 3: 6
+
+RUNNING TEST 5
+
+This game will have 4 players!
+
+Printing INITIAL gamestate information: 
+numPlayers: 4
+
+ALL Kingdom Cards -- KEY : 
+curse - 0
+estate - 1
+duchy - 2
+province - 3
+copper - 4
+silver - 5
+gold - 6
+adventurer - 7
+council_room - 8
+feast - 9
+gardens - 10
+mine - 11
+remodel - 12
+smithy - 13
+village - 14
+baron - 15
+great_hall - 16
+minion - 17
+steward - 18
+tribute - 19
+ambassador - 20
+cutpurse - 21
+embargo - 22
+outpost - 23
+salvager - 24
+sea_hag - 25
+treasure_map - 26
+
+Randomly Selected Kingdom Cards (by ENUM): 
+k[0]: 25
+k[1]: 1
+k[2]: 10
+k[3]: 22
+k[4]: 12
+k[5]: 21
+k[6]: 20
+k[7]: 19
+k[8]: 13
+k[9]: 9
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 1 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 1 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 1 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 1 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 22 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 3 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 22 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 4 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 22 for 2 money
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought 22 for 2 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 22 for 2 money
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 1 4 1 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought 22 for 2 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 1 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 1 money before buy: 
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 22 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 22.
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 3
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 22 4 4 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 22 1 
+
+Player 0 Action Phase (if any): 
+Player 0: played card 22.
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+22 4 4 1 4 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 22.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 4 4 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 1 22 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 22.
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 3 money before buy: 
+Player 0: bought silver
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 4 money before buy: 
+Player 1: bought 20 for 3 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 1 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 1 money before buy: 
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 11
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 4 5 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 4
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 2 money before buy: 
+Player 3: bought estate
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 5 1 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 6 money before buy: 
+Player 0: bought 25 for 4 money
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 12
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 4 1 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 2 money before buy: 
+Player 1: bought estate
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 6
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 4 1 1 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 3 money before buy: 
+Player 2: bought silver
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 10
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 5 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 4 1 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 2 money before buy: 
+Player 0: bought estate
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 7
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+5 4 1 4 4 
+
+Player 1 Action Phase (if any): 
+
+
+Player 1: 5 money before buy: 
+Player 1: bought 25 for 4 money
+Player 1: bought copper
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 1
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 20 4 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 4 money before buy: 
+Player 2: bought 20 for 3 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 5
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 4 4 1 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 3 money before buy: 
+Player 3: bought silver
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 13
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 2
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 1 5 5 4 
+
+Player 2 Action Phase (if any): 
+
+
+Player 2: 5 money before buy: 
+Player 2: bought 25 for 4 money
+Player 2: bought copper
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 0
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 1 5 1 4 
+
+Player 3 Action Phase (if any): 
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+Player 0's information: 
+whoseTurn: 0
+deckCount: 8
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 1 5 4 
+
+Player 0 Action Phase (if any): 
+
+
+Player 0: 4 money before buy: 
+Player 0: bought 20 for 3 money
+Player 0: bought copper
+Player 0: end turn
+
+Player 1's information: 
+whoseTurn: 1
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 4 4 20 
+
+Player 1 Action Phase (if any): 
+Player 1: played card 20.
+
+
+Player 1: 3 money before buy: 
+Player 1: bought silver
+Player 1: end turn
+
+Player 2's information: 
+whoseTurn: 2
+deckCount: 9
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+1 4 5 20 1 
+
+Player 2 Action Phase (if any): 
+Player 2: played card 20.
+
+
+Player 2: 2 money before buy: 
+Player 2: bought estate
+Player 2: end turn
+
+Player 3's information: 
+whoseTurn: 3
+deckCount: 14
+phase: 0
+numActions: 1
+numBuys: 1
+numCards in Hand: 5
+ENUMs of cards in hand: 
+4 5 4 1 20 
+
+Player 3 Action Phase (if any): 
+Player 3: played card 20.
+
+
+Player 3: 4 money before buy: 
+Player 3: bought 20 for 3 money
+Player 3: bought copper
+Player 3: end turn
+
+
+--
+--- The Game is over! ---
+
+Score for Player 0: 11
+Score for Player 1: 3
+Score for Player 2: 6
+Score for Player 3: 6
+
+--- Tests completed ---
+--
+File 'testdominion.c'
+Lines executed:93.70% of 127
+Creating 'testdominion.c.gcov'
+
+        -:    0:Source:testdominion.c
+        -:    0:Graph:testdominion.gcno
+        -:    0:Data:testdominion.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "rngs.h"
+        -:    3:#include <stdio.h>
+        -:    4:#include <math.h>
+        -:    5:#include <stdlib.h>
+        -:    6:#include <time.h>
+        -:    7:
+        -:    8:#define MAX_TESTS 5
+        -:    9:
+       10:   10:void runDomGame(){
+        -:   11:
+        -:   12:	  struct gameState state;
+        -:   13:      int i, n, numPlayers, seed;
+       10:   14:      int flag = 0;
+        -:   15:
+       10:   16:      srand(time(NULL));
+       10:   17:      seed = rand();
+        -:   18:
+        -:   19:	  // Check 2-4 players
+       30:   20:	  while(flag == 0) {
+       10:   21:	     numPlayers = rand() % 5;
+       10:   22:	     if (!(numPlayers < 2)){
+       10:   23:            flag = 1;
+       10:   24:            printf("This game will have %d players!\n\n", numPlayers);
+        -:   25:	     }
+        -:   26:      }
+        -:   27:      int k[10];
+        -:   28:      int kCheck[26][2];
+        -:   29:
+      280:   30:      for(i=0;i<27; i++){
+      270:   31:        kCheck[i][0] = i;
+      270:   32:        kCheck[i][1] = 0;
+        -:   33:      }
+        -:   34:
+      110:   35:      for (i=0; i<10; i++) {
+      100:   36:          int rando=0;
+      100:   37:          flag = 0;
+      350:   38:          while (flag == 0) {
+      150:   39:            rando = rand() % 27;
+      150:   40:            if ((rando > 7) && (kCheck[rando][1] == 0)) {
+      100:   41:                k[i] = rando;
+      100:   42:                kCheck[rando][1] = 1;
+      100:   43:                flag = 1;
+        -:   44:            }
+        -:   45:          }
+        -:   46:      }
+        -:   47:
+       10:   48:      initializeGame(numPlayers, k, seed, &state);	//initialize Gamestate
+        -:   49:
+       10:   50:      printf("Printing INITIAL gamestate information: \n");
+       10:   51:          printf("numPlayers: %d\n\n", state.numPlayers);
+        -:   52:
+       10:   53:          printf("ALL Kingdom Cards -- KEY : \n");
+       10:   54:          printf("curse - 0\n");
+       10:   55:          printf("estate - 1\n");
+       10:   56:          printf("duchy - 2\n");
+       10:   57:          printf("province - 3\n");
+        -:   58:
+       10:   59:          printf("copper - 4\n");
+       10:   60:          printf("silver - 5\n");
+       10:   61:          printf("gold - 6\n");
+        -:   62:
+       10:   63:          printf("adventurer - 7\n");
+       10:   64:          printf("council_room - 8\n");
+       10:   65:          printf("feast - 9\n");
+       10:   66:          printf("gardens - 10\n");
+       10:   67:          printf("mine - 11\n");
+       10:   68:          printf("remodel - 12\n");
+       10:   69:          printf("smithy - 13\n");
+       10:   70:          printf("village - 14\n");
+       10:   71:          printf("baron - 15\n");
+       10:   72:          printf("great_hall - 16\n");
+       10:   73:          printf("minion - 17\n");
+       10:   74:          printf("steward - 18\n");
+       10:   75:          printf("tribute - 19\n");
+       10:   76:          printf("ambassador - 20\n");
+       10:   77:          printf("cutpurse - 21\n");
+       10:   78:          printf("embargo - 22\n");
+       10:   79:          printf("outpost - 23\n");
+       10:   80:          printf("salvager - 24\n");
+       10:   81:          printf("sea_hag - 25\n");
+       10:   82:          printf("treasure_map - 26\n\n");
+        -:   83:
+       10:   84:      printf("Randomly Selected Kingdom Cards (by ENUM): \n");
+      110:   85:      for(i=0; i<10; i++){
+      100:   86:        printf("k[%d]: %d\n", i, k[i]);
+        -:   87:      }
+        -:   88:
+        -:   89:      // IMPLEMENTATION OF GAME
+      180:   90:      while(!isGameOver(&state)){
+        -:   91:
+      800:   92:          for (n=0; n<numPlayers; n++) {
+      640:   93:              int handCount = 0, temp = 0, money=0;
+        -:   94:
+      640:   95:              printf("\nPlayer %d's information: \n", state.whoseTurn);
+      640:   96:                  printf("whoseTurn: %d\n", state.whoseTurn);
+      640:   97:                  printf("deckCount: %d\n", state.deckCount[n]);
+      640:   98:                  printf("phase: %d\n", state.phase);
+      640:   99:                  printf("numActions: %d\n", state.numActions);
+      640:  100:                  printf("numBuys: %d\n", state.numBuys);
+      640:  101:                  handCount = numHandCards(&state);
+      640:  102:                  printf("numCards in Hand: %d\n", handCount);
+      640:  103:                  printf("ENUMs of cards in hand: \n");
+     3840:  104:                  for (i=0; i<handCount; i++) {
+     3200:  105:                    temp = handCard(i, &state);
+     3200:  106:                    printf("%d ", temp);
+        -:  107:                  }
+      640:  108:                  printf("\n");
+        -:  109:
+        -:  110:              // search for an action
+      640:  111:              printf("\nPlayer %d Action Phase (if any): \n", n);
+     3840:  112:              for (i=0; i<handCount; i++) {
+     3200:  113:                temp = handCard(i, &state);
+     3200:  114:                if ( ( temp > 6 ) && ( state.numActions > 0 ) && ( temp != gardens ) ) {
+      150:  115:                    playCard(i, 1, 1, 1, &state);
+      150:  116:                    printf("Player %d: played card %d.\n", n, temp);
+      150:  117:                    state.numActions--;
+        -:  118:                }
+      640:  119:              } printf("\n");
+        -:  120:
+        -:  121:              // Total money in hand, buy something
+     3840:  122:              for (i=0; i<handCount; i++) {
+     3200:  123:                temp = handCard(i, &state);
+     3200:  124:                if (temp == 4) {
+     1690:  125:                    playCard(i, -1, -1, -1, &state);
+     1690:  126:                    money++;
+     1510:  127:                } else if (temp == 5) {
+      130:  128:                    playCard(i, -1, -1, -1, &state);
+      130:  129:                    money += 2;
+     1380:  130:                } else if (temp == 6) {
+    #####:  131:                    playCard(i, -1, -1, -1, &state);
+    #####:  132:                    money += 3;
+        -:  133:                }
+        -:  134:              }
+      640:  135:              printf("\nPlayer %d: %d money before buy: \n", n, money);
+        -:  136:
+        -:  137:              // Buy providence first
+      640:  138:              if (money >= 8) {
+    #####:  139:                 printf("Player %d: bought province\n", n);
+    #####:  140:                 buyCard(province, &state);
+        -:  141:               }
+        -:  142:               // Buy a card from the table, if able
+     7040:  143:               for(i=0; i<10; i++){
+     6400:  144:                    if ((money > (getCost(k[i]))) && (state.supplyCount[k[i]] > 0)) {
+      340:  145:                        buyCard(k[i], &state);
+      340:  146:                        printf("Player %d: bought %d for %d money\n", n, k[i], getCost(k[i]));
+      340:  147:                        money = money - (getCost(k[i]));
+        -:  148:                    }
+        -:  149:               }
+        -:  150:
+        -:  151:              // Now buy victory or money cards
+      640:  152:               if (money >= 6) {
+    #####:  153:                 printf("Player %d: bought gold\n", n);
+    #####:  154:                 buyCard(gold, &state);
+        -:  155:               }
+      640:  156:               else if (money >= 5) {
+    #####:  157:                 printf("Player %d: bought duchy\n", n);
+    #####:  158:                 buyCard(duchy, &state);
+        -:  159:               }
+      640:  160:               else if (money >= 3) {
+      110:  161:                 printf("Player %d: bought silver\n", n);
+      110:  162:                 buyCard(silver, &state);
+        -:  163:               }
+      530:  164:               else if (money >= 2) {
+      250:  165:                 printf("Player %d: bought estate\n", n);
+      250:  166:                 buyCard(estate, &state);
+        -:  167:               }
+      280:  168:               else if (money <= 1) {
+      280:  169:                 printf("Player %d: bought copper\n", n);
+      280:  170:                 buyCard(copper, &state);
+        -:  171:               }
+        -:  172:
+        -:  173:              // END TURN
+      640:  174:              printf("Player %d: end turn\n", n);
+        -:  175:          /*    if (isGameOver(&state)) {
+        -:  176:                printf("\n\nGAME IS OVER\n\n")
+        -:  177:                break;
+        -:  178:              } */
+      640:  179:              endTurn(&state);
+        -:  180:          }
+        -:  181:      }
+        -:  182:
+       10:  183:	  printf("\n\n--\n--- The Game is over! ---\n\n");
+        -:  184:	  int s;
+       50:  185:	  for (s=0; s<numPlayers; s++) {
+       40:  186:          printf("Score for Player %d: %d\n", s, scoreFor(s, &state));
+        -:  187:	  }
+       10:  188:}
+        -:  189:
+        2:  190:int main() {
+        -:  191:
+        -:  192:     int z;
+        2:  193:     printf("\n\n---\nStart of testdominion.c -- Testing full implementation of Dominion\n---\n\n");
+        -:  194:
+       12:  195:     for (z=0; z<MAX_TESTS; z++) {
+       10:  196:        printf("\nRUNNING TEST %d\n\n", z+1);
+       10:  197:        runDomGame();
+        -:  198:     }
+        2:  199:     printf("\n--- Tests completed ---\n--\n");
+        -:  200:
+        2:  201:	 return 0;
+        -:  202:}

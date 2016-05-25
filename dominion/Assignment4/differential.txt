@@ -1,0 +1,22 @@
+My tester had fairly good coverage. Within 2 runs I was able to achieve at least 60% code coverage. 
+Even though high code coverage does not mean the that the test
+is good or better than another test, however it has a greater chance of revealing bugs in the code. 
+After analysing what parts of the code were not touched, 
+it was revealed that it was either cards that had not been played (or even selected as kingdom cards) 
+and special functions that were not used in the tester.
+
+Although I added a bit more "filler " informative text, I noticed my partner and I shared many similar ideas: 
+	- printing the key to the randomly selected kingdom cards
+	- Include number of players
+	- what a player may buy (if any)
+	- what a player may play (if any)
+	- when a certain player ends its turn
+	- End of game
+	
+Some of the main differences I noticed were that I included the score, initial game state information, the cards in hand,
+amount of money (and buys) a player might have before buying cards, and a loop through multiple runs 
+of the games implementation. My partners tester did not display this information, although it did
+give clear indication of when a card was failed to be purchased or an action failed to happen. After
+comparing files with another class member, I have a new appreciation for certain criteria
+of a tester, such as white space when necessary to increase readability and which information about the gamestate
+is actually displayed to give the debugger an idea of what might be occurring.
