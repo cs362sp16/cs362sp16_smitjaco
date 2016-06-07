@@ -1,0 +1,13 @@
+Bug 1
+Summary: The minion card in the cardeffect function does not increment numActions. This can be checked by looking at the line with state->numActions and checking the value before and after it is called.
+Severity: It is not a big super big deal and is an easy fix because it is just one card and one value that is off instead of say a whole function.
+
+Bug 2
+Summary: In the council room card function there is a small bug in the for loop, the for loop goes one to many times giving the player an extra card.
+for (int i = 0; i < 4; i++)
+
+Severity: Moderate because it could affect the outcome but is and easy fix.
+
+Bug 3
+Summary: There is a bug in your buyCard function that makes it so you cannot buy cards even when you have the gold to do so. The fix is easy it is just flipping the else if statements less than sign.
+Severity: High because it throws off the whole flow of the game and the function is called a lot.
