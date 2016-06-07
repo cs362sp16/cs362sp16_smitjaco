@@ -13,7 +13,7 @@ void fail(){
     exit(EXIT_SUCCESS);
 }
 
-// Tests the minion card in dominion.c
+// Tests the minion card
 int main (int argc, char** argv) {
     if(argc > 2) debug = 1;
 
